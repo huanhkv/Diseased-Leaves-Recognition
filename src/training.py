@@ -54,7 +54,7 @@ def training(model,
         layer.trainable = True
 
     model.compile(loss='binary_crossentropy', 
-                  optimizer=Adam(learning_rate=1e-3), 
+                  optimizer=Adam(learning_rate=1e-4), 
                   metrics=["binary_accuracy"])
 
     history = model.fit(training_data[0], 
